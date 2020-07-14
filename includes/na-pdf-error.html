@@ -1,0 +1,104 @@
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+<!-- <link rel="stylesheet" type="text/css" href="css/custom.css" /> -->
+<style>
+    .create-resume-text {
+        padding: 20px 0px;
+    }
+
+    .create-resume-text h1 {
+        font-size: 24px;
+        color: #2f2f2f;
+        font-weight: 700;
+    }
+
+    .create-resume-text h2 {
+        font-size: 16px;
+        color: #2f2f2f;
+        font-weight: 400;
+    }
+
+    .create-resume-text a {
+        margin-right: 20px;
+    }
+
+    .btn-outline-primary {
+        border-color: #007bff;
+    }
+
+    .text-right {
+        text-align: right !important;
+    }
+
+    header .logo.only_header img {
+        height: 40px;
+    }
+
+    header .logo img {
+        width: auto;
+        height: 20px;
+        margin-top: 5px;
+    }
+
+    header {
+        height: 68px;
+        max-height: 68px;
+        background: #fff !important;
+        /* box-shadow: 0 2px 10px 0 #f1f1f3; */
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        z-index: 1050;
+    }
+
+    body {
+        background-color: #f6f7fb;
+
+    }
+</style>
+<header class="header">
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-auto m-auto logo only_header">
+                    <a class="wir-resume" href="https://resume.workruit.com">
+                        <img src="/images/workruit-resume-logo-color.svg" class="img-responsive resume-logo m-0"
+                            alt="workruit-instent-resume" width="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <!-- Create Resume -->
+    <div class="row justify-content-center create-resume-container align-items-center m-0" id="createResumeContainer2"
+        style="min-height: 100vh;">
+        <div class="col-md-6 create-resume-text">
+            <h1 class="title"></h1>
+            <h2 class="description p-0"></h2>
+            <a class="btn btn-outline-primary back_button d-none wir-resume" href="https://resume.workruit.com"
+                role="button">Go
+                to Workruit Instant Resume</a>
+        </div>
+        <div class="col-md-6 text-right">
+            <img src="/images/HiddenUrl.1.png" alt="HiddenUrl" class="w-100" />
+            <!-- <h3>Create Resume</h3>-->
+        </div>
+    </div>
+    <!-- /Create Resume -->
+</div>
+
+<script>
+    if (window.location.origin == 'https://dev.workruit.com') {
+        var baseWebsite = "https://devresume.workruit.com";
+    } else if (window.location.origin == 'https://stage.workruit.com') {
+        var baseWebsite = "https://stageresume.workruit.com";
+
+    } else if (window.location.origin == 'https://www.workruit.com' || window.location.origin == 'https://workruit.com' || window.location.origin == 'http://www.workruit.com') {
+        var baseWebsite = "https://resume.workruit.com";
+
+    } else {
+        var baseWebsite = "https://resume.workruit.com";
+    }
+    $('.wir-resume').attr("href", baseWebsite)
+</script>

@@ -1,0 +1,100 @@
+<footer class="footer-w-block-before mt-5" data-aos="fade" data-aos-offset="-550">
+	<div class="container-fluid hero-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="left_side_logo ">
+						<a href="/"><img src="../images/svg/logo.svg" alt="logo"></a>
+					</div>
+					<br />
+					<div class="content" style="font-size: 14px">
+						Workruit aims at simplifying job search and recruitment using advanced Artificial Intelligence
+						and Machine Learning technologies. The time taken for the hiring process is reduced by half
+						since Workruit sifts the applicants using data analytics and displays only relevant profiles
+						that match your requirements.
+					</div>
+					<br />
+					<div class="row ">
+						<div class="col">
+							<div class="button button__cta border">
+								<span>Get the app</span>
+								<a target="_blank" href="https://itunes.apple.com/in/app/workruit/id1189752813?mt=8"
+									class="apple">
+									<img src="./images/svg/applelogo.svg" alt="logo">
+								</a>
+								<a target="_blank"
+									href="https://play.google.com/store/apps/details?id=com.workruit&hl=en"
+									class="android">
+									<img src="./images/svg/android.svg" alt="logo">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="row copyright">
+						<div class="col">
+							<p>© 2020 StoryTech Pvt Ltd. All Rights Reserved</p>
+						</div>
+					</div> -->
+				</div>
+
+				<div class=" col-md-3">
+					<ul class="footer-nav center">
+						<li class="col-sm-auto w-100"><a href="about.html">About Us</a></li>
+						<li class="col-sm-auto w-100"><a href="contact.html">Contact Us</a></li>
+						<li class="col-sm-auto w-100"><a href="careers.html">Careers</a></li>
+						<li class="col-sm-auto w-100"><a href="https://blog.workruit.com/" target="_blank">Blog</a></li>
+						<li class="col-sm-auto w-100"><a href="faq.html">FAQ</a></li>
+						<li class="col-sm-auto w-100"><a href="privacy.html">Privacy</a></li>
+						<li class="col-sm-auto w-100"><a href="terms.html">Terms</a></li>
+					</ul>
+
+				</div>
+				<div class="col-md-3">
+					<ul class="footer-nav center">
+						<li class="col-sm-auto w-100"><a target="_blank" class="emp_login">Employer Login</a></li>
+						<li class="col-sm-auto w-100"><a target="_blank" class="emp_singup">Employer Sign Up</a></li>
+						<li class="col-sm-auto w-100"><a href="applicant.html">Job Seeker</a></li>
+						<li class="col-sm-auto w-100"><a class="resume_path" href="https://resume.workruit.com/"
+								target="_blank">Workruit Instant
+								Resume</a></li>
+						<li class="col-sm-auto w-100"><a href="resumepricing.html">Resume Pricing</a></li>
+						<li class="col-sm-auto  w-100"><a href="" class="business_resume_path" target="_blank">Instant
+								Resume for Business</a></li>
+						<li class="col-sm-auto w-100"><a target="_blank" href="government.html">Workruit for
+								Government</a></li>
+
+					</ul>
+
+				</div>
+
+				<div class="col-md-3">
+					<ul class="footer-nav center">
+						<li class="col-sm-auto w-100"><a target="_blank"
+								href="https://www.facebook.com/workruit/">Facebook</a></li>
+						<li class="col-sm-auto w-100"><a target="_blank" href="https://twitter.com/workruit">Twitter</a>
+						</li>
+						<li class="col-sm-auto w-100"><a target="_blank"
+								href="https://www.instagram.com/workruit/">Instagram</a></li>
+						<li class="col-sm-auto w-100"><a target="_blank"
+								href="https://www.linkedin.com/company/workruit">Linkedin</a></li>
+
+					</ul>
+
+				</div>
+			</div>
+			<div class="row copyright">
+				<div class="col-md-6">
+					<p>© <span id="year"></span> StoryTech Pvt Ltd. All Rights Reserved.</p>
+				</div>
+			</div>
+
+</footer>
+<script>
+	var date = new Date().getFullYear();
+	document.getElementById("year").innerHTML = date;
+
+	$(function () {
+		var link = window.location.href.split('/')[window.location.href.split('/').length - 1];
+		$('.footer-nav li a[href^="' + link + '"]').addClass('footer__active');
+	});
+</script>
