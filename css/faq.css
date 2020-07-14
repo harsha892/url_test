@@ -1,0 +1,250 @@
+.card {
+    border: none;
+}
+
+
+.card-header {
+    background-color: #fff;
+    padding: 0;
+
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.right_title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inner_title_button {
+    padding: 22px 0 26px;
+    cursor: pointer;
+    color: #3d4152;
+    width: 100%;
+    text-align: left;
+}
+
+button {
+    padding: 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font: inherit;
+    margin: 0;
+    -webkit-appearance: none;
+}
+
+.nav-link.active .faq_heading {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.inner_title {
+    font-size: 18px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.p_20 {
+    padding: 20px;
+}
+
+.faq_heading {
+    color: white;
+    font-size: 20px;
+}
+
+.faq_side_Nav {
+    background-color: #62b896;
+    padding-right: 0;
+
+}
+
+.faq_side_Nav .nav-link.active {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.card-body {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 14px;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+.up_down_arrow {
+    width: 18px;
+    /* margin-left: 70%; */
+}
+
+.up_down_arrow {
+    transform: rotate(180deg);
+}
+
+.up_down_arrow.down {
+    transform: rotate(0deg);
+}
+
+.img_span {
+    float: right;
+    /* background-image: url("../images/svg/arrow-ios-upward-outline.svg");
+    width: 100%;
+    background-repeat: no-repeat; */
+}
+
+
+
+
+
+
+@media only screen and (max-width: 992px) {
+    body {
+        /* font-size: 16px */
+    }
+
+    .images_side {
+        width: 100%;
+    }
+
+    .faq_side_Nav {
+        height: 20rem;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px
+    }
+
+    .images_side {
+        width: 100%;
+    }
+
+    .faq_side_Nav {
+        background-color: #62b896;
+        padding-right: 17px;
+    }
+
+    .faq_side_Nav .nav-link.active {
+        border-radius: 0.25rem;
+    }
+
+    /* .heading_mobile {
+        padding: 22px 0 26px;
+        cursor: pointer;
+        color: #3d4152;
+        width: 100%;
+        text-align: left;
+    }
+
+    a .heading_mobile::after {
+        content: "";
+        color: #131212;
+        display: inline-block;
+        position: relative;
+        border: solid;
+        border-color: #337ab7;
+        border-width: 0 2px 2px 0;
+        border-radius: 2px;
+        width: 7.5px;
+        height: 7.5px;
+        right: 0;
+        float: right;
+        transition: opacity .2s ease-in-out;
+        cursor: auto;
+        margin-top: 3%;
+    }
+
+
+    .Side_hover_mobile a .heading_mobile::after {
+        border-color: #131212 !important;
+        transform: rotate(-45deg) !important;
+    }
+
+    .Side_hover_mobile a .heading_mobile.down::after {
+        border-color: #131212 !important;
+        transform: rotate(38deg) !important;
+    }
+
+    .mobile_dropdown .heading_mobile.down {
+        font-weight: bold
+    } */
+
+}
+
+
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 16px
+    }
+
+    .images_side {
+        width: 100%;
+    }
+
+    .faq_side_Nav {
+        height: 19.5rem;
+    }
+
+    .faq_side_Nav {
+        background-color: #62b896;
+        padding-right: 17px;
+    }
+
+    .faq_side_Nav .nav-link.active {
+        border-radius: 0.25rem;
+    }
+
+    /* .heading_mobile {
+        padding: 22px 0 26px;
+        cursor: pointer;
+        color: #3d4152;
+        width: 100%;
+        text-align: left;
+    }
+
+    a .heading_mobile::after {
+        content: "";
+        color: #131212;
+        display: inline-block;
+        position: relative;
+        border: solid;
+        border-color: #337ab7;
+        border-width: 0 2px 2px 0;
+        border-radius: 2px;
+        width: 7.5px;
+        height: 7.5px;
+        right: 0;
+        float: right;
+        transition: opacity .2s ease-in-out;
+        cursor: auto;
+        margin-top: 3%;
+    }
+
+
+    .Side_hover_mobile a .heading_mobile::after {
+        border-color: #131212 !important;
+        transform: rotate(-45deg) !important;
+    }
+
+    .Side_hover_mobile a .heading_mobile.down::after {
+        border-color: #131212 !important;
+        transform: rotate(38deg) !important;
+    }
+
+    .mobile_dropdown .heading_mobile.down {
+        font-weight: bold
+    } */
+
+}

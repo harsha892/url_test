@@ -1,0 +1,39 @@
+/*sc-1 landing page*/
+/*sc-2 clients*/
+/*sc-3 side image */
+/*sc-4 key features*/
+/*sc-5 side roles and specialities*/
+/*sc-6 testimonials*/
+/*sc-7 getting noticed*/
+/*sc-8 workruit demo emp*/
+/*sc-9 footer nav*/
+
+$font : 'Source Sans Pro', sans-serif !important;
+$landing_page_font_heading:48px;
+$main_content_para_font:24px; /*landing page, testimonals, */
+$medium_heading_font: 22px; /*sc-1 para, */
+$second_heading: 30px; /*  sc-4 heading ,sc-6 heading,  sc-7 heading, sc-8 heading */
+$third_heading: 20px;
+$side_para_font: 16px;   /*side nav, key features-para, */
+$get_app: 18px; /*get app, resume-para, Request demo button */
+$w_blog: 14px;
+$f_font: 17px;
+$emp_landing: url("../images/hero-inner.svg");
+$app_landing: url("../images/a-hero-gradient.svg");
+$quote: url("../images/e-quote-bg.svg");
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    color: black;
+    animation-name: fade-in;
+    animation-duration: 0.5s;
+}
