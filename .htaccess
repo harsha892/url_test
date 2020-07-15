@@ -2,6 +2,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Redirect 301 "/blog" "https://blog.workruit.com/"
 Redirect 301 "/index.html" "/"
 ErrorDocument 404 https://dev.workruit.com/404
