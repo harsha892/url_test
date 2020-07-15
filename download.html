@@ -5,10 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#ffffff">
-	<meta name="DESCRIPTION"
-		content="Workruit is an AI based job search platform connecting job seekers and recruiters instantly based on mutual interest. 
-		Swipe Right, Instant Match, Get Hired. Download Workruit today and say hello to the next gen job search application.">
-	<title>Workruit - Mobile Job Search | Talent Search | Recruitment - Download now</title>
+	<title>DEET — Get the App</title>
 	<link rel='shortcut icon' type='image/x-icon' href='favicon.png' />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css" />
@@ -44,65 +41,41 @@
 
 		gtag('config', 'UA-65074645-1');
 	</script>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94088165-5"></script>
+
 	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
+		var userAgent = navigator.userAgent;
+		console.log("----" + userAgent);
+		if (userAgent.match(/Android/i)) {
+			location.href = "https://play.google.com/store/apps/details?id=com.tsdeet&hl=en"
+		} else if (userAgent.match(/iPhone|iPad|iPod/i)) {
+			location.href = "https://itunes.apple.com/in/app/workruit/id1189752813?mt=8"
+		} else {
+			location.href = "https://emp.tsdeet.com/#/signup";
 		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-94088165-5');
 	</script>
 	<!-- Chatra {literal} -->
 	<script>
-		var shareParameter = window.location.href.split(location.origin + "/")[1];
-		if (!shareParameter) {
-			(function (d, w, c) {
-				w.ChatraID = 'aeF8KSek7P9EJiSLt';
-				var s = d.createElement('script');
-				w[c] = w[c] || function () {
-					(w[c].q = w[c].q || []).push(arguments);
-				};
-				s.async = true;
-				s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') +
-					'//call.chatra.io/chatra.js';
-				if (d.head) d.head.appendChild(s);
-			})(document, window, 'Chatra');
-			//chatra custom set up 
-			window.ChatraSetup = {
-				colors: {
-					buttonText: '#ffffff',
-					/* chat button text color */
-					buttonBg: '#337ab7' /* chat button background color */
-				}
+		(function (d, w, c) {
+			w.ChatraID = 'aeF8KSek7P9EJiSLt';
+			var s = d.createElement('script');
+			w[c] = w[c] || function () {
+				(w[c].q = w[c].q || []).push(arguments);
+			};
+			s.async = true;
+			s.src = (d.location.protocol === 'https:' ? 'https:' : 'http:') +
+				'//call.chatra.io/chatra.js';
+			if (d.head) d.head.appendChild(s);
+		})(document, window, 'Chatra');
+		//chatra custom set up 
+		window.ChatraSetup = {
+			colors: {
+				buttonText: '#ffffff',
+				/* chat button text color */
+				buttonBg: '#337ab7' /* chat button background color */
 			}
 		};
 	</script>
-	<script>
-		var userAgent = navigator.userAgent;
-		console.log("----" + userAgent);
-		if (userAgent.match(/Android/i)) {
-			location.href = "https://play.google.com/store/apps/details?id=com.workruit&hl=en"
-		} else if (userAgent.match(/iPhone|iPad|iPod/i)) {
-			location.href = "https://itunes.apple.com/in/app/workruit/id1189752813?mt=8"
-		} else {
-			location.href = "https://app.workruit.com";
-		}
-	</script>
 	<!-- /Chatra {/literal} -->
-	<script>
-		var userAgent = navigator.userAgent;
-		console.log("----" + userAgent);
-		if (userAgent.match(/Android/i)) {
-			location.href = "https://play.google.com/store/apps/details?id=com.workruit&hl=en"
-		} else if (userAgent.match(/iPhone|iPad|iPod/i)) {
-			location.href = "https://itunes.apple.com/in/app/workruit/id1189752813?mt=8"
-		} else {
-			location.href = "https://app.workruit.com";
-		}
-	</script>
 </head>
 
 <body class="download-bg">
@@ -214,7 +187,7 @@
 							</g>
 						</svg>
 					</a>
-					<a href="https://play.google.com/store/apps/details?id=com.workruit&amp;hl=en" class="android">
+					<a href="https://play.google.com/store/apps/details?id=com.tsdeet&hl=en" class="android">
 						<svg width="30px" height="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
 							xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-3.5 -3.5 55 55"
 							enable-background="new -3.5 -3.5 55 55" xml:space="preserve">
@@ -230,11 +203,6 @@
 		</div>
 
 	</div>
-	<div class="d-none" id="topBlock"></div>
-	<div class="feature-1 d-none"></div>
-	<div class="feature-2 d-none"></div>
-	<div class="feature-3 d-none"></div>
-	<div class="feature-4 d-none"></div>
 	<!--  <div class="container-fluid layout-hero layout-hero__blue-green-employer">
 		<div class="container">
 			<div class="row">
@@ -289,10 +257,10 @@
 
 	<script>
 		// autoplay vide on anroid devices
-		// var video = document.getElementById('video');
-		// video.addEventListener('click', function () {
-		// 	video.play();
-		// }, false);
+		var video = document.getElementById('video');
+		video.addEventListener('click', function () {
+			video.play();
+		}, false);
 	</script>
 
 </body>
