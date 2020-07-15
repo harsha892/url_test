@@ -2,5 +2,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-Redirect 301 "/#" "https://blog.workruit.com/"
 Redirect 301 "/blog" "https://blog.workruit.com/"
+ErrorDocument 404 "dev.workruit.com/404.html"
