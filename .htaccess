@@ -2,7 +2,9 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
+RewriteRule ^/#(.*) "https://dev.workruit.com/faq" [R]
 Redirect 301 "/blog" "https://blog.workruit.com/"
-Redirect 301 "/index.html" "/"
-RewriteRule ^/#(.*) https://dev.workruit.com [R]
+Redirect 301 "https://urltestapp.herokuapp.com/index" "https://urltestapp.herokuapp.com"
 ErrorDocument 404 https://dev.workruit.com/404
