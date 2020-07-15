@@ -1,4 +1,7 @@
 // $('.loading-container').delay(1000).fadeOut();
+if(window.location.href.indexOf('.html') !== -1){
+    window.location.href = location.origin + window.location.href.split(location.origin)[1].split('.')[0]
+}
 $(window).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   var type = urlParams.get('type'); // "lorem"
