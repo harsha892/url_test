@@ -5,5 +5,5 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Redirect 301 "/blog" "https://blog.workruit.com/"
-Redirect 301 "^/#"(.*) "https://dev.workruit.com/faq" [R]
+#Redirect 301 "^/#"(.*) "https://dev.workruit.com/faq" [R]
 ErrorDocument 404 "https://dev.workruit.com/404"
