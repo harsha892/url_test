@@ -1,7 +1,14 @@
 // $('.loading-container').delay(1000).fadeOut();
-if(window.location.href.indexOf('.html') !== -1){
-    window.location.href = location.origin + window.location.href.split(location.origin)[1].split('.')[0]
-}
+
+// if (window.location.href.indexOf('.html') !== -1 && location.pathname != 'index.html') {
+//   window.location.href = location.origin + window.location.href.split(location.origin)[1].split('.')[0];
+// } else if (window.location.href == 'https://www.workruit.com/index') {
+//   window.location.href = location.origin
+// }
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+// console.log = function () {};
+
 $(window).ready(function () {
   var urlParams = new URLSearchParams(window.location.search);
   var type = urlParams.get('type'); // "lorem"
@@ -185,7 +192,7 @@ setTimeout(function () {
     location_live = "https://resume.workruit.com"
   }
   $('.resume_path').attr('href', location_live)
-  $('.pricing_resume').attr("href", location_live + "/#signup")
+  $('.pricing_resume').attr("href", location_live + "/#/signup")
   // console.log("location_live::::::", location_live)
 }, 1000)
 
@@ -199,7 +206,7 @@ setTimeout(function () {
     location_live = "https://resume.workruit.com"
   }
   $('.business_resume_path').attr('href', location_live + "/business.html")
-  // $('.pricing_resume').attr("href", location_live + "/#signup")
+  // $('.pricing_resume').attr("href", location_live + "/#/signup")
   // console.log("location_live::::::", location_live)
 }, 1000)
 
@@ -242,6 +249,23 @@ if ($(window).width() > 600) {
   }
 
 }
+var userAgent = navigator.userAgent;
+
+// var safariAgent  = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 ? true : true;
+if (userAgent.match(/Safari/i) && userAgent.match(/Chrome/i) == null) {
+  // console.log("userAgent match",userAgent.match(/Safari/i));
+  // debugger;
+  $('.layout-hero__a').css({
+    "padding-top": "104em"
+  });
+  $('.safari_css_container').css({
+    "margin-top": "-97em"
+  });
+  $('.layout_structure').css({
+    "margin-top": "-68em"
+  })
+}
+
 
 if ($(window).width() < 1024) {
   $(".control-side").addClass("d-none");
@@ -257,7 +281,7 @@ $(".social-phone").keypress(function (e) {
   return true;
 });
 $('body').on('paste', '.social-phone', function (event) {
-  console.log(!event.originalEvent.clipboardData.getData('Text').match(/^\d+$/));
+  // console.log(!event.originalEvent.clipboardData.getData('Text').match(/^\d+$/));
   if (!event.originalEvent.clipboardData.getData('Text').match(/^\d+$/)) {
     $(this).text('')
     event.preventDefault();
@@ -265,22 +289,5 @@ $('body').on('paste', '.social-phone', function (event) {
   if ($(this).text().length > 15) {
     $(this).text($(this).text().slice(0, 15));
   }
-  console.log($(this).text().length > 15);
+  // console.log($(this).text().length > 15);
 });
-
-var userAgent = navigator.userAgent;
-
-// var safariAgent  = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 ? true : true;
-if (userAgent.match(/Safari/i) && userAgent.match(/Chrome/i)) {
-  // console.log("userAgent match",userAgent.match(/Safari/i));
-  // debugger;
-  $('.layout-hero__a').css({
-    "padding-top": "104em"
-  });
-  $('.safari_css_container').css({
-    "margin-top": "-97em"
-  });
-  $('.layout_structure').css({
-    "margin-top": "-68em"
-  })
-}
