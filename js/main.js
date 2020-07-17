@@ -267,3 +267,20 @@ $('body').on('paste', '.social-phone', function (event) {
   }
   console.log($(this).text().length > 15);
 });
+
+var userAgent = navigator.userAgent;
+
+// var safariAgent  = navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1 ? true : true;
+if (userAgent.match(/Safari/i) && userAgent.match(/Chrome/i)) {
+  // console.log("userAgent match",userAgent.match(/Safari/i));
+  // debugger;
+  $('.layout-hero__a').css({
+    "padding-top": "104em"
+  });
+  $('.safari_css_container').css({
+    "margin-top": "-97em"
+  });
+  $('.layout_structure').css({
+    "margin-top": "-68em"
+  })
+}
