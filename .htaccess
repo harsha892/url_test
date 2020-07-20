@@ -5,7 +5,7 @@ RewriteRule ^(.*)$ $1.html [NC,L]
 
 # RewriteRule ^careers/senior-full-stack-developer$ /fsd
 #RewriteRule ^careers/(.+)$ /$1 [NC,L]
-RewriteRule ^careers/senior-full-stack-developer$ $2 [NC,L]
+RewriteRule ^careers/senior-full-stack-developer$ https://urltestapp.herokuapp.com/sfc [NC,L]
 
 #RewriteRule \#/^(.*)$ $1 [L,R=302]
 #RewriteCond %{HTTPS} !=on
