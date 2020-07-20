@@ -2,7 +2,10 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-Redirect 'https://urltestapp.herokuapp.com/applicant' 'https://urltestapp.herokuapp.com/app'
+
+RewriteRule ^Quest/ /blank-parent-page/quest/ [R,L,NC]
+
+
 #RewriteRule \#/^(.*)$ $1 [L,R=302]
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
