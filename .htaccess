@@ -3,7 +3,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-RewriteRule ^careers/ /careers_list [R,L,NC]
+RewriteRule  /applicant /app
 
 
 #RewriteRule \#/^(.*)$ $1 [L,R=302]
