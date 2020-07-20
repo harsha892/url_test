@@ -9,7 +9,7 @@ RewriteBase /
 RewriteRule ^careers/(.*)$ /$1 [NC,L,R]
 
 # RewriteRule ^careers/senior-full-stack-developer$ /fsd
-#RewriteRule ^careers/(.+)$ /$1 [NC,L]
+#RewriteRule ^careers/(.+)$ $1 [NC,L]
 #RewriteRule "^/careers/(.+)" "/$1" [L]
 
 #RewriteRule \#/^(.*)$ $1 [L,R=302]
