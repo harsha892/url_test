@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME}\.html -f
 
 # RewriteRule ^careers(/.*?)(?:\.html)?$ $1 [R=302,L]  -> done
 
-RewriteRule ^careers/senior-full-stack-developer.html$ /$1 [L] 
+RewriteRule ^https://urltestapp.herokuapp.com/careers/senior-full-stack-developer.html$ $1 [L] 
 
 
 
