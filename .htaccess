@@ -2,7 +2,8 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-RewriteRule \#/^(.*)$ $1 [L,R=302]
+RewriteRule 'https://urltestapp.herokuapp.com/applicant' 'https://urltestapp.herokuapp.com/app'
+#RewriteRule \#/^(.*)$ $1 [L,R=302]
 #RewriteCond %{HTTPS} !=on
 #RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Redirect 301 "/blog" "https://blog.workruit.com/"
