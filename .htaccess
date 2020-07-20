@@ -1,13 +1,13 @@
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^(.*)$ $1.html [NC,L]
+#RewriteRule ^(.*)$ $1.html [NC,L]
 
 # RewriteCond %{THE_REQUEST} ^GET\ /careers/
 
 # RewriteRule ^careers(/.*?)(?:\.html)?$ $1 [R=302,L]  -> done
 
-RewriteRule ^careers/senior-full-stack-developer$ /$1 [L] 
+RewriteRule ^careers/senior-full-stack-developer.html$ /$1 [L] 
 
 
 
